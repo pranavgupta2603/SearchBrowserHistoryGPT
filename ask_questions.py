@@ -12,7 +12,7 @@ import openai
 import numpy as np
 from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
 
-openai.api_key = "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"
+openai.api_key = "ENTER_OPEN_AI_KEY_HERE"
 
 
 df=pd.read_csv('processed/embeddings.csv', index_col=0)
