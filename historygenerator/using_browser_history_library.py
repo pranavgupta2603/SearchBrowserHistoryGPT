@@ -12,4 +12,4 @@ for i in his:
     df["title"].append(i[1])
     df["last_visit_time"].append(datetime.strptime(i[2], "%Y-%m-%d %H:%M:%S"))
 df = pd.DataFrame(df)
-df.to_csv('../new_his.csv', index=False)
+df.to_csv('./history.csv', index=False)

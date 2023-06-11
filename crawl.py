@@ -1,13 +1,9 @@
 import requests
 import re
-import urllib.request
 from bs4 import BeautifulSoup
-from collections import deque
-from html.parser import HTMLParser
 from urllib.parse import urlparse
 import os
 import pandas as pd
-import tiktoken
 import numpy as np
 
 
