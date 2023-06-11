@@ -12,8 +12,8 @@ import openai
 import numpy as np
 from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
 
-openai.api_key = "ENTER_OPEN_API_KEY_HERE"
-"""
+openai.api_key = "ENTER OPENAI API KEY HERE"
+
 def remove_newlines(serie):
     serie = serie.str.replace('\n', ' ')
     serie = serie.str.replace('\\n', ' ')
@@ -123,7 +123,7 @@ df.n_tokens.hist()
 df['embeddings'] = df.text.apply(lambda x: openai.Embedding.create(input=x, engine='text-embedding-ada-002')['data'][0]['embedding'])
 df.to_csv('processed/embeddings.csv')
 df.head()
-"""
+
 df=pd.read_csv('processed/embeddings.csv', index_col=0)
 df['embeddings'] = df['embeddings'].apply(eval).apply(np.array)
 

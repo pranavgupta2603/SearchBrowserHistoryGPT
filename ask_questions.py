@@ -12,7 +12,7 @@ import openai
 import numpy as np
 from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
 
-openai.api_key = "ENTER_OPEN_AI_KEY_HERE"
+openai.api_key = "ENTER OPENAI API KEY HERE"
 
 
 df=pd.read_csv('processed/embeddings.csv', index_col=0)
@@ -96,4 +96,4 @@ def answer_question(
 ### Step 13
 ################################################################################
 
-print(answer_question(df, question="Where can I find my Google chrome folder on my PC?", debug=False))
+print(answer_question(df, question="Give me the url to the place where the CV was in google drive", debug=False))

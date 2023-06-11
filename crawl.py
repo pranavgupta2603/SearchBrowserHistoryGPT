@@ -10,7 +10,6 @@ import pandas as pd
 import tiktoken
 import numpy as np
 
-#from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
 
 def crawl(url):
     # Parse the URL and get the domain
